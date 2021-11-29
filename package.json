@@ -66,6 +66,7 @@
         "webpack:browser": "npm run webpack-local -- --mode production --config webpack.browser.config.js --progress",
         "webpack:browser:legacy": "npm run webpack-local -- --mode production --config webpack.browser.legacy.config.js --progress",
         "publish:beta": "npm publish --tag=next",
+        "publish:legacy": "npm publish --tag=legacy",
         "build:umd": "npm run webpack:dev && npm run webpack:prod && npm run webpack:browser && npm run webpack:browser:legacy",
         "build:es2015": "npm run tsc-local -- -m es2015 --outDir _es2015 --p tsconfig.prod.json",
         "build:esNext": "npm run tsc-local -- -m esNext --outDir _esNext --p tsconfig.prod.json",
